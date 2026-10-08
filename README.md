@@ -26,8 +26,3 @@ Coloca estos archivos dentro de `img/` con esos nombres exactos:
 Las imágenes se cargan como `background-image` en CSS, no con `<img>`. Si falta
 algún archivo, el navegador simplemente muestra el color de fondo azul en su
 lugar, sin romper el diseño ni mostrar un icono de imagen rota.
-
-## Antes de publicar
-
-En `index.html`, sección de contacto, cambia los placeholders `TU-USUARIO` y
-`TU-PERFIL` por tu usuario real de GitHub y LinkedIn.
