@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrián Reyes López · Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ===== CABECERA ===== -->
+  <header class="cabecera">
+    <div class="contenedor">
+      <a href="#portada" class="logo-cabecera">Adrián Reyes</a>
+      <nav class="menu-principal">
+        <a href="#portada">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#formacion">Formación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== PORTADA ===== -->
+    <section id="portada" class="portada">
+      <div class="contenedor">
+        <span class="etiqueta-portada">Estudiante de 2º DAW · Buscando prácticas</span>
+        <div class="foto-perfil"></div>
+        <h1 class="titulo-portada">Hola, soy Adrián Reyes. Desarrollo webs y aplicaciones.</h1>
+        <p class="texto-portada">
+          Estudiante de Desarrollo de Aplicaciones Web buscando prácticas para
+          seguir aprendiendo y aportar valor a proyectos reales, desde el
+          diseño de la interfaz hasta la base de datos.
+        </p>
+        <div class="botones-portada">
+          <a href="#proyectos" class="boton boton-primario">Ver proyectos</a>
+          <a href="cv.html" class="boton boton-secundario">Descargar CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MI ===== -->
+    <section id="sobre-mi" class="seccion seccion-gris">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Sobre mí</h2>
+        <p class="subtitulo-seccion">Quién soy y qué busco en unas prácticas</p>
+        <div class="bloque-sobre-mi">
+          <div class="texto-sobre-mi">
+            <p>
+              Soy una persona responsable y proactiva, con facilidad para
+              trabajar en equipo y adaptarme a distintos entornos de trabajo.
+            </p>
+            <p>
+              Antes de estudiar DAW completé el Técnico Superior en Enseñanza
+              y Animación Sociodeportiva, una etapa que me dio mucha soltura
+              comunicando ideas, organizando grupos y gestionando imprevistos,
+              habilidades que ahora aplico también al desarrollo de software.
+            </p>
+            <p>
+              Me interesa especialmente el desarrollo full stack y crear
+              aplicaciones que resuelvan problemas reales de negocios y
+              pequeñas empresas, como ya he hecho en varios de mis proyectos.
+            </p>
+          </div>
+          <ul class="lista-datos-rapidos">
+            <li><span>Ubicación</span><span>Dos Hermanas (Sevilla)</span></li>
+            <li><span>Disponibilidad</span><span>Jornada completa</span></li>
+            <li><span>Carnet de conducir</span><span>B</span></li>
+            <li><span>Inglés</span><span>Nivel medio</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Proyectos</h2>
+        <p class="subtitulo-seccion">Algunos de los trabajos en los que he aplicado lo aprendido</p>
+        <div class="rejilla-proyectos">
+
+          <article class="tarjeta-proyecto">
+            <div class="imagen-proyecto imagen-mugiwara"></div>
+            <div class="cuerpo-tarjeta">
+              <h3 class="titulo-tarjeta">Mugiwara Box</h3>
+              <p class="descripcion-tarjeta">
+                Nueva web para un box de CrossFit real de Dos Hermanas que
+                sustituye su antigua web de plantilla. Incluye registro/login
+                con roles de administrador y cliente, reservas de clases con
+                control de aforo y aprobación del admin, y reseñas de Google
+                en tiempo real.
+              </p>
+              <div class="etiquetas-tecnologia">
+                <span class="etiqueta-tecnologia">HTML5</span>
+                <span class="etiqueta-tecnologia">Tailwind CSS</span>
+                <span class="etiqueta-tecnologia">Alpine.js</span>
+                <span class="etiqueta-tecnologia">PHP</span>
+                <span class="etiqueta-tecnologia">MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <div class="imagen-proyecto imagen-kaboom"></div>
+            <div class="cuerpo-tarjeta">
+              <h3 class="titulo-tarjeta">Kaboom Animaciones y Eventos</h3>
+              <p class="descripcion-tarjeta">
+                Web de una empresa de animación con catálogo por categorías,
+                paquetes y servicios sueltos, y gestión de solicitudes de
+                reserva por parte del administrador. Diseñada a partir de una
+                encuesta de mercado real con 25 respuestas.
+              </p>
+              <div class="etiquetas-tecnologia">
+                <span class="etiqueta-tecnologia">PHP</span>
+                <span class="etiqueta-tecnologia">PDO</span>
+                <span class="etiqueta-tecnologia">MySQL</span>
+                <span class="etiqueta-tecnologia">Sesiones</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <div class="imagen-proyecto imagen-lucia-duque"></div>
+            <div class="cuerpo-tarjeta">
+              <h3 class="titulo-tarjeta">Lucía Duque</h3>
+              <p class="descripcion-tarjeta">
+                Diseño de logo (monograma LD, paleta malva) y web catálogo
+                para una peluquera y manicurista de Dos Hermanas.
+              </p>
+              <div class="etiquetas-tecnologia">
+                <span class="etiqueta-tecnologia">Diseño de logo</span>
+                <span class="etiqueta-tecnologia">HTML</span>
+                <span class="etiqueta-tecnologia">CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <div class="imagen-proyecto imagen-pequenos-viajeros"></div>
+            <div class="cuerpo-tarjeta">
+              <h3 class="titulo-tarjeta">Pequeños Viajeros</h3>
+              <p class="descripcion-tarjeta">
+                Guía de estilos para una agencia de viajes familiares: logo,
+                paleta de colores, tipografías Quicksand y Baloo 2, y
+                componentes de interfaz.
+              </p>
+              <div class="etiquetas-tecnologia">
+                <span class="etiqueta-tecnologia">Diseño de interfaces</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <div class="imagen-proyecto imagen-spring-angular"></div>
+            <div class="cuerpo-tarjeta">
+              <h3 class="titulo-tarjeta">Prácticas full stack</h3>
+              <p class="descripcion-tarjeta">
+                API REST con Spring Boot consumida desde una aplicación
+                Angular, con persistencia de datos en PostgreSQL.
+              </p>
+              <div class="etiquetas-tecnologia">
+                <span class="etiqueta-tecnologia">Java</span>
+                <span class="etiqueta-tecnologia">Spring Boot</span>
+                <span class="etiqueta-tecnologia">Angular</span>
+                <span class="etiqueta-tecnologia">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <div class="imagen-proyecto imagen-ubuntu-server"></div>
+            <div class="cuerpo-tarjeta">
+              <h3 class="titulo-tarjeta">Servidor Linux</h3>
+              <p class="descripcion-tarjeta">
+                Configuración de un Ubuntu Server en VirtualBox con red en
+                modo puente e IP fija mediante netplan.
+              </p>
+              <div class="etiquetas-tecnologia">
+                <span class="etiqueta-tecnologia">Linux</span>
+                <span class="etiqueta-tecnologia">VirtualBox</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TECNOLOGIAS ===== -->
+    <section id="tecnologias" class="seccion seccion-gris">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Tecnologías</h2>
+        <p class="subtitulo-seccion">Lenguajes, frameworks y herramientas con los que trabajo</p>
+
+        <div class="rejilla-tecnologias">
+          <div class="bloque-tecnologia">
+            <h3 class="titulo-bloque-tecnologia">Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Angular</li>
+              <li>Tailwind CSS</li>
+              <li>Bootstrap</li>
+              <li>Alpine.js</li>
+            </ul>
+          </div>
+          <div class="bloque-tecnologia">
+            <h3 class="titulo-bloque-tecnologia">Backend</h3>
+            <ul>
+              <li>PHP</li>
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>C#</li>
+              <li>APIs REST</li>
+            </ul>
+          </div>
+          <div class="bloque-tecnologia">
+            <h3 class="titulo-bloque-tecnologia">Bases de datos y datos</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>Oracle</li>
+              <li>JSON</li>
+              <li>XML/XSD</li>
+            </ul>
+          </div>
+          <div class="bloque-tecnologia">
+            <h3 class="titulo-bloque-tecnologia">Herramientas</h3>
+            <ul>
+              <li>VS Code</li>
+              <li>NetBeans</li>
+              <li>Visual Studio</li>
+              <li>Eclipse / Spring Tools</li>
+              <li>XAMPP</li>
+              <li>Linux</li>
+              <li>WordPress</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="habilidades-personales">
+          <span class="etiqueta-habilidad">Trabajo en equipo</span>
+          <span class="etiqueta-habilidad">Resolución de problemas</span>
+          <span class="etiqueta-habilidad">Comunicación</span>
+          <span class="etiqueta-habilidad">Proactividad</span>
+          <span class="etiqueta-habilidad">Adaptación al cambio</span>
+          <span class="etiqueta-habilidad">Tolerancia a la presión</span>
+          <span class="etiqueta-habilidad">Creatividad</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMACION ===== -->
+    <section id="formacion" class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Formación</h2>
+        <p class="subtitulo-seccion">Mi trayectoria académica</p>
+
+        <div class="linea-tiempo">
+          <div class="elemento-tiempo">
+            <p class="fecha-tiempo">2025 – actualidad</p>
+            <h3 class="titulo-tiempo">Técnico Superior en Desarrollo de Aplicaciones Web</h3>
+            <p class="lugar-tiempo">ITP Pablo de la Torre, Dos Hermanas</p>
+          </div>
+          <div class="elemento-tiempo">
+            <p class="fecha-tiempo">2019 – 2021</p>
+            <h3 class="titulo-tiempo">Técnico Superior en Enseñanza y Animación Sociodeportiva</h3>
+            <p class="lugar-tiempo">IES Virgen de Valme, Dos Hermanas</p>
+          </div>
+          <div class="elemento-tiempo">
+            <p class="fecha-tiempo">2016 – 2019</p>
+            <h3 class="titulo-tiempo">Bachillerato de Ciencias de la Salud</h3>
+            <p class="lugar-tiempo">IES Virgen de Valme, Dos Hermanas</p>
+          </div>
+          <div class="elemento-tiempo">
+            <p class="fecha-tiempo">Formación complementaria</p>
+            <h3 class="titulo-tiempo">Certificado de nivel básico en Prevención de Riesgos Laborales</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="seccion seccion-contacto">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Contacto</h2>
+        <p class="subtitulo-seccion">¿Buscas a alguien para prácticas? Hablemos</p>
+        <div class="enlaces-contacto">
+          <a class="enlace-contacto" href="mailto:adriirl06@gmail.com">adriirl06@gmail.com</a>
+          <a class="enlace-contacto" href="tel:+34645133101">645 133 101</a>
+          <!-- Cambiar TU-USUARIO por el nombre de usuario real de GitHub -->
+          <a class="enlace-contacto" href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">GitHub</a>
+          <!-- Cambiar TU-PERFIL por el identificador real de LinkedIn -->
+          <a class="enlace-contacto" href="https://www.linkedin.com/in/TU-PERFIL" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE ===== -->
+  <footer class="pie-pagina">
+    <p>© 2026 Adrián Reyes López</p>
+  </footer>
+
+</body>
+</html>

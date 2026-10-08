@@ -1,0 +1,646 @@
+/* =====================================================
+   VARIABLES Y BASE
+===================================================== */
+:root {
+  --azul: #2563eb;
+  --azul-oscuro: #1d4ed8;
+  --blanco: #ffffff;
+  --gris-claro: #f8fafc;
+  --oscuro: #0f172a;
+  --texto: #1e293b;
+  --texto-suave: #64748b;
+  --borde: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--texto);
+  background-color: var(--blanco);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =====================================================
+   CABECERA
+===================================================== */
+.cabecera {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--blanco);
+  border-bottom: 1px solid var(--borde);
+  z-index: 1000;
+}
+
+.cabecera .contenedor {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-cabecera {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--azul);
+}
+
+.menu-principal {
+  display: flex;
+  gap: 28px;
+}
+
+.menu-principal a {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--texto);
+  transition: color 0.2s ease;
+}
+
+.menu-principal a:hover {
+  color: var(--azul);
+}
+
+/* =====================================================
+   SECCIONES GENERALES
+===================================================== */
+.seccion {
+  padding: 90px 0;
+}
+
+.seccion-gris {
+  background-color: var(--gris-claro);
+}
+
+.titulo-seccion {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.subtitulo-seccion {
+  font-size: 16px;
+  color: var(--texto-suave);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+/* =====================================================
+   PORTADA
+===================================================== */
+.portada {
+  padding-top: 180px;
+  padding-bottom: 90px;
+  text-align: center;
+}
+
+.etiqueta-portada {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: var(--azul-oscuro);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.foto-perfil {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto 28px;
+  background-color: var(--azul);
+  background-image: url("img/perfil.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 4px solid var(--blanco);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-portada {
+  font-size: 40px;
+  font-weight: 800;
+  max-width: 700px;
+  margin: 0 auto 18px;
+}
+
+.texto-portada {
+  font-size: 17px;
+  color: var(--texto-suave);
+  max-width: 560px;
+  margin: 0 auto 32px;
+}
+
+.botones-portada {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boton {
+  display: inline-block;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.boton:hover {
+  transform: translateY(-2px);
+}
+
+.boton-primario {
+  background-color: var(--azul);
+  color: var(--blanco);
+}
+
+.boton-secundario {
+  background-color: var(--blanco);
+  color: var(--azul);
+  border: 1px solid var(--azul);
+}
+
+/* =====================================================
+   SOBRE MI
+===================================================== */
+.bloque-sobre-mi {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.texto-sobre-mi p {
+  margin-bottom: 16px;
+  color: var(--texto);
+}
+
+.lista-datos-rapidos {
+  background-color: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.lista-datos-rapidos li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--borde);
+  font-size: 14px;
+}
+
+.lista-datos-rapidos li:last-child {
+  border-bottom: none;
+}
+
+.lista-datos-rapidos span:first-child {
+  color: var(--texto-suave);
+}
+
+.lista-datos-rapidos span:last-child {
+  font-weight: 600;
+}
+
+/* =====================================================
+   PROYECTOS
+===================================================== */
+.rejilla-proyectos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.tarjeta-proyecto {
+  background-color: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-proyecto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.imagen-proyecto {
+  height: 170px;
+  width: 100%;
+  background-color: var(--azul);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-mugiwara { background-image: url("img/mugiwara.jpg"); }
+.imagen-kaboom { background-image: url("img/kaboom.jpg"); }
+.imagen-lucia-duque { background-image: url("img/lucia-duque.jpg"); }
+.imagen-pequenos-viajeros { background-image: url("img/pequenos-viajeros.jpg"); }
+.imagen-spring-angular { background-image: url("img/spring-angular.jpg"); }
+.imagen-ubuntu-server { background-image: url("img/ubuntu-server.jpg"); }
+
+.cuerpo-tarjeta {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.titulo-tarjeta {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.descripcion-tarjeta {
+  font-size: 14px;
+  color: var(--texto-suave);
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.etiquetas-tecnologia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.etiqueta-tecnologia {
+  background-color: var(--gris-claro);
+  color: var(--azul-oscuro);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* =====================================================
+   TECNOLOGIAS
+===================================================== */
+.rejilla-tecnologias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.bloque-tecnologia {
+  background-color: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.titulo-bloque-tecnologia {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--azul);
+  margin-bottom: 14px;
+}
+
+.bloque-tecnologia ul li {
+  font-size: 14px;
+  padding: 5px 0;
+  color: var(--texto);
+}
+
+.habilidades-personales {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.etiqueta-habilidad {
+  background-color: var(--gris-claro);
+  border: 1px solid var(--borde);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* =====================================================
+   FORMACION
+===================================================== */
+.linea-tiempo {
+  max-width: 700px;
+  margin: 0 auto;
+  border-left: 2px solid var(--azul);
+  padding-left: 30px;
+}
+
+.elemento-tiempo {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.elemento-tiempo::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--azul);
+}
+
+.fecha-tiempo {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--azul);
+  margin-bottom: 4px;
+}
+
+.titulo-tiempo {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.lugar-tiempo {
+  font-size: 14px;
+  color: var(--texto-suave);
+}
+
+/* =====================================================
+   CONTACTO
+===================================================== */
+.seccion-contacto {
+  background-color: var(--oscuro);
+  color: var(--blanco);
+  text-align: center;
+}
+
+.seccion-contacto .titulo-seccion,
+.seccion-contacto .subtitulo-seccion {
+  color: var(--blanco);
+}
+
+.seccion-contacto .subtitulo-seccion {
+  color: #94a3b8;
+}
+
+.enlaces-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.enlace-contacto {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 13px 26px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.enlace-contacto:hover {
+  background-color: var(--azul);
+}
+
+/* =====================================================
+   PIE DE PAGINA
+===================================================== */
+.pie-pagina {
+  background-color: var(--oscuro);
+  color: #94a3b8;
+  text-align: center;
+  font-size: 13px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* =====================================================
+   RESPONSIVE: TABLET
+===================================================== */
+@media (max-width: 1024px) {
+  .rejilla-proyectos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rejilla-tecnologias {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bloque-sobre-mi {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE: MOVIL
+===================================================== */
+@media (max-width: 640px) {
+  .cabecera .contenedor {
+    gap: 12px;
+  }
+
+  .menu-principal {
+    gap: 14px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .menu-principal::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu-principal a {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .titulo-portada {
+    font-size: 30px;
+  }
+
+  .seccion {
+    padding: 60px 0;
+  }
+
+  .rejilla-proyectos {
+    grid-template-columns: 1fr;
+  }
+
+  .rejilla-tecnologias {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================================================
+   PAGINA CV (impresion)
+===================================================== */
+.pagina-cv {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: var(--blanco);
+  border: 1px solid var(--borde);
+  padding: 50px;
+}
+
+.barra-acciones-cv {
+  max-width: 800px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecera-cv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  border-bottom: 3px solid var(--azul);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.foto-cv {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: var(--azul);
+  background-image: url("img/perfil.jpg");
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.nombre-cv {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.puesto-cv {
+  font-size: 14px;
+  color: var(--azul);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.datos-contacto-cv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 12px;
+  color: var(--texto-suave);
+}
+
+.seccion-cv {
+  margin-bottom: 20px;
+}
+
+.titulo-seccion-cv {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--azul);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--borde);
+  padding-bottom: 8px;
+}
+
+.texto-cv {
+  font-size: 13px;
+  color: var(--texto);
+  margin-bottom: 6px;
+}
+
+.elemento-cv {
+  margin-bottom: 10px;
+}
+
+.titulo-elemento-cv {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.detalle-elemento-cv {
+  font-size: 12px;
+  color: var(--texto-suave);
+}
+
+.rejilla-cv-dos-columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.lista-cv li {
+  font-size: 12px;
+  padding: 2px 0;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  .no-imprimir {
+    display: none;
+  }
+
+  body {
+    background-color: var(--blanco);
+  }
+
+  .pagina-cv {
+    margin: 0;
+    border: none;
+    padding: 0;
+  }
+
+  .foto-cv,
+  .foto-perfil {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}

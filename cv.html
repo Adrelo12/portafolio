@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV · Adrián Reyes López</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ===== BARRA DE ACCIONES (no se imprime) ===== -->
+  <div class="barra-acciones-cv no-imprimir">
+    <a href="index.html" class="boton boton-secundario">← Volver al portafolio</a>
+    <a href="#" onclick="window.print(); return false;" class="boton boton-primario">Imprimir / Guardar PDF</a>
+  </div>
+
+  <!-- ===== PAGINA CV (A4) ===== -->
+  <div class="pagina-cv">
+
+    <!-- ===== CABECERA ===== -->
+    <header class="cabecera-cv">
+      <div class="foto-cv"></div>
+      <div>
+        <h1 class="nombre-cv">Adrián Reyes López</h1>
+        <p class="puesto-cv">Estudiante de 2º DAW · Buscando prácticas</p>
+        <div class="datos-contacto-cv">
+          <span>adriirl06@gmail.com</span>
+          <span>645 133 101</span>
+          <span>Dos Hermanas (Sevilla)</span>
+          <span>Carnet B</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== PERFIL ===== -->
+    <section class="seccion-cv">
+      <h2 class="titulo-seccion-cv">Perfil</h2>
+      <p class="texto-cv">
+        Estudiante de Desarrollo de Aplicaciones Web, responsable y proactivo,
+        con buena capacidad de trabajo en equipo. Procedente del Técnico
+        Superior en Enseñanza y Animación Sociodeportiva, lo que me aporta
+        soltura comunicando y organizando. Interesado en el desarrollo full
+        stack y en crear aplicaciones para negocios reales. Disponibilidad a
+        jornada completa e inglés de nivel medio.
+      </p>
+    </section>
+
+    <!-- ===== PROYECTOS DESTACADOS ===== -->
+    <section class="seccion-cv">
+      <h2 class="titulo-seccion-cv">Proyectos destacados</h2>
+
+      <div class="elemento-cv">
+        <p class="titulo-elemento-cv">Mugiwara Box</p>
+        <p class="detalle-elemento-cv">
+          Web para un box de CrossFit real con login por roles, reservas de
+          clases y reseñas de Google. HTML5, Tailwind CSS, Alpine.js, PHP, MySQL.
+        </p>
+      </div>
+      <div class="elemento-cv">
+        <p class="titulo-elemento-cv">Kaboom Animaciones y Eventos</p>
+        <p class="detalle-elemento-cv">
+          Web de empresa de animación con catálogo y gestión de reservas,
+          basada en encuesta de mercado real. PHP, PDO, MySQL.
+        </p>
+      </div>
+      <div class="elemento-cv">
+        <p class="titulo-elemento-cv">Lucía Duque</p>
+        <p class="detalle-elemento-cv">
+          Diseño de logo y web catálogo para peluquera y manicurista. Diseño de logo, HTML, CSS.
+        </p>
+      </div>
+      <div class="elemento-cv">
+        <p class="titulo-elemento-cv">Pequeños Viajeros</p>
+        <p class="detalle-elemento-cv">
+          Guía de estilos para agencia de viajes familiares. Diseño de interfaces.
+        </p>
+      </div>
+      <div class="elemento-cv">
+        <p class="titulo-elemento-cv">Prácticas full stack</p>
+        <p class="detalle-elemento-cv">
+          API REST con Spring Boot consumida desde Angular, con PostgreSQL.
+        </p>
+      </div>
+      <div class="elemento-cv">
+        <p class="titulo-elemento-cv">Servidor Linux</p>
+        <p class="detalle-elemento-cv">
+          Ubuntu Server en VirtualBox con red en puente e IP fija mediante netplan.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== TECNOLOGIAS Y FORMACION ===== -->
+    <div class="rejilla-cv-dos-columnas">
+      <section class="seccion-cv">
+        <h2 class="titulo-seccion-cv">Tecnologías</h2>
+        <p class="texto-cv"><strong>Frontend:</strong> HTML5, CSS3, JavaScript, TypeScript, Angular, Tailwind CSS, Bootstrap, Alpine.js</p>
+        <p class="texto-cv"><strong>Backend:</strong> PHP, Java, Spring Boot, C#, APIs REST</p>
+        <p class="texto-cv"><strong>Datos:</strong> MySQL, PostgreSQL, Oracle, JSON, XML/XSD</p>
+        <p class="texto-cv"><strong>Herramientas:</strong> VS Code, NetBeans, Visual Studio, Eclipse/Spring Tools, XAMPP, Linux, WordPress</p>
+      </section>
+
+      <section class="seccion-cv">
+        <h2 class="titulo-seccion-cv">Formación</h2>
+        <div class="elemento-cv">
+          <p class="titulo-elemento-cv">TS Desarrollo de Aplicaciones Web</p>
+          <p class="detalle-elemento-cv">ITP Pablo de la Torre · 2025 – actualidad</p>
+        </div>
+        <div class="elemento-cv">
+          <p class="titulo-elemento-cv">TS Enseñanza y Animación Sociodeportiva</p>
+          <p class="detalle-elemento-cv">IES Virgen de Valme · 2019 – 2021</p>
+        </div>
+        <div class="elemento-cv">
+          <p class="titulo-elemento-cv">Bachillerato de Ciencias de la Salud</p>
+          <p class="detalle-elemento-cv">IES Virgen de Valme · 2016 – 2019</p>
+        </div>
+        <div class="elemento-cv">
+          <p class="titulo-elemento-cv">Certificado básico en Prevención de Riesgos Laborales</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section class="seccion-cv">
+      <h2 class="titulo-seccion-cv">Habilidades personales</h2>
+      <p class="texto-cv">
+        Trabajo en equipo · Resolución de problemas · Comunicación ·
+        Proactividad · Adaptación al cambio · Tolerancia a la presión · Creatividad
+      </p>
+    </section>
+
+    <footer>
+      <p class="detalle-elemento-cv">© 2026 Adrián Reyes López</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
