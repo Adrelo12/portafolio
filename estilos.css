@@ -271,12 +271,174 @@ ul {
   background-position: center;
 }
 
-.imagen-mugiwara { background-image: url("img/mugiwara.jpg"); }
-.imagen-kaboom { background-image: url("img/kaboom.jpg"); }
-.imagen-lucia-duque { background-image: url("img/lucia-duque.jpg"); }
 .imagen-pequenos-viajeros { background-image: url("img/pequenos-viajeros.jpg"); }
 .imagen-spring-angular { background-image: url("img/spring-angular.jpg"); }
 .imagen-ubuntu-server { background-image: url("img/ubuntu-server.jpg"); }
+
+/* ===== CARRUSEL DE PROYECTOS ===== */
+.carrusel {
+  position: relative;
+  height: 170px;
+  width: 100%;
+  background-color: var(--azul);
+  overflow: hidden;
+}
+
+.carrusel-ajuste-contain {
+  background-color: var(--gris-claro);
+}
+
+.pista-carrusel {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.pista-carrusel::-webkit-scrollbar {
+  display: none;
+}
+
+.diapositiva-carrusel {
+  flex: 0 0 100%;
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+.diapositiva-carrusel img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+.carrusel-ajuste-contain .diapositiva-carrusel img {
+  object-fit: contain;
+  padding: 16px;
+}
+
+.flecha-carrusel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(15, 23, 42, 0.55);
+  color: var(--blanco);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.flecha-carrusel:hover {
+  background-color: rgba(15, 23, 42, 0.8);
+}
+
+.flecha-carrusel-anterior { left: 10px; }
+.flecha-carrusel-siguiente { right: 10px; }
+
+.puntos-carrusel {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.punto-carrusel {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.punto-carrusel-activo {
+  background-color: var(--blanco);
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(15, 23, 42, 0.92);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  z-index: 2000;
+}
+
+.lightbox-overlay-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-imagen {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lightbox-cerrar,
+.lightbox-anterior,
+.lightbox-siguiente {
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.lightbox-cerrar:hover,
+.lightbox-anterior:hover,
+.lightbox-siguiente:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-cerrar {
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+}
+
+.lightbox-anterior,
+.lightbox-siguiente {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+}
+
+.lightbox-anterior { left: 20px; }
+.lightbox-siguiente { right: 20px; }
+
+body.bloquear-scroll {
+  overflow: hidden;
+}
 
 .cuerpo-tarjeta {
   padding: 22px;
