@@ -266,14 +266,31 @@ ul {
 .imagen-proyecto {
   height: 170px;
   width: 100%;
-  background-color: var(--azul);
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--blanco);
 }
 
-.imagen-pequenos-viajeros { background-image: url("img/pequenos-viajeros.jpg"); }
-.imagen-spring-angular { background-image: url("img/spring-angular.jpg"); }
-.imagen-ubuntu-server { background-image: url("img/ubuntu-server.jpg"); }
+.icono-imagen-proyecto {
+  width: 42px;
+  height: 42px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.nombre-imagen-proyecto {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.imagen-pequenos-viajeros { background: linear-gradient(135deg, #f472b6, #fb923c); }
+.imagen-spring-angular { background: linear-gradient(135deg, #22c55e, #0ea5e9); }
+.imagen-ubuntu-server { background: linear-gradient(135deg, #475569, #0f172a); }
 
 /* ===== CARRUSEL DE PROYECTOS ===== */
 .carrusel {

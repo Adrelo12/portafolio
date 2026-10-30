@@ -14,16 +14,18 @@ del botón de descarga del CV, imprescindible para abrir el diálogo de impresi�
 
 ## Imágenes necesarias
 
-Imágenes sueltas, dentro de `img/` con esos nombres exactos:
+Imagen suelta, dentro de `img/` con ese nombre exacto:
 
 - `perfil.jpg`
-- `pequenos-viajeros.jpg`
-- `spring-angular.jpg`
-- `ubuntu-server.jpg`
 
-Se cargan como `background-image` en CSS, no con `<img>`. Si falta algún
+Se carga como `background-image` en CSS, no con `<img>`. Si falta el
 archivo, el navegador simplemente muestra el color de fondo azul en su lugar,
 sin romper el diseño ni mostrar un icono de imagen rota.
+
+Las tarjetas de Pequeños Viajeros, Prácticas full stack y Servidor Linux no
+tienen foto de proyecto (son trabajos de diseño/configuración sin capturas
+que mostrar): llevan un fondo con degradado e icono SVG en línea en
+`index.html` en su lugar, sin depender de ningún archivo de imagen.
 
 ### Carruseles de proyectos
 
