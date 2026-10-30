@@ -14,18 +14,24 @@ del botón de descarga del CV, imprescindible para abrir el diálogo de impresi�
 
 ## Imágenes necesarias
 
-Imagen suelta, dentro de `img/` con ese nombre exacto:
+Imágenes sueltas, dentro de `img/` con esos nombres exactos:
 
 - `perfil.jpg`
+- `pequenos-viajeros.jpg` — portada generada a partir de la primera página
+  de `docs/guia-estilos-pequenos-viajeros.pdf` (logo y paleta del proyecto).
 
-Se carga como `background-image` en CSS, no con `<img>`. Si falta el
-archivo, el navegador simplemente muestra el color de fondo azul en su lugar,
+Se cargan como `background-image` en CSS, no con `<img>`. Si falta algún
+archivo, el navegador simplemente muestra el color de fondo en su lugar,
 sin romper el diseño ni mostrar un icono de imagen rota.
 
-Las tarjetas de Pequeños Viajeros, Prácticas full stack y Servidor Linux no
-tienen foto de proyecto (son trabajos de diseño/configuración sin capturas
-que mostrar): llevan un fondo con degradado e icono SVG en línea en
-`index.html` en su lugar, sin depender de ningún archivo de imagen.
+Las tarjetas de Prácticas full stack y Servidor Linux no tienen foto de
+proyecto (son trabajos de configuración sin capturas que mostrar): llevan un
+fondo con degradado e icono SVG en línea en `index.html` en su lugar, sin
+depender de ningún archivo de imagen.
+
+La tarjeta de Pequeños Viajeros enlaza además a
+`docs/guia-estilos-pequenos-viajeros.pdf` con un botón "Ver guía (PDF)" que
+abre el documento en una pestaña nueva.
 
 ### Carruseles de proyectos
 

@@ -288,9 +288,21 @@ ul {
   letter-spacing: 0.3px;
 }
 
-.imagen-pequenos-viajeros { background: linear-gradient(135deg, #f472b6, #fb923c); }
+.imagen-pequenos-viajeros {
+  background-color: #fde8d7;
+  background-image: url("img/pequenos-viajeros.jpg");
+  background-size: cover;
+  background-position: center;
+}
 .imagen-spring-angular { background: linear-gradient(135deg, #22c55e, #0ea5e9); }
 .imagen-ubuntu-server { background: linear-gradient(135deg, #475569, #0f172a); }
+
+.boton-tarjeta {
+  align-self: flex-start;
+  margin-top: 14px;
+  padding: 9px 18px;
+  font-size: 13px;
+}
 
 /* ===== CARRUSEL DE PROYECTOS ===== */
 .carrusel {
