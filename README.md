@@ -24,11 +24,6 @@ Se cargan como `background-image` en CSS, no con `<img>`. Si falta algún
 archivo, el navegador simplemente muestra el color de fondo en su lugar,
 sin romper el diseño ni mostrar un icono de imagen rota.
 
-Las tarjetas de Prácticas full stack y Servidor Linux no tienen foto de
-proyecto (son trabajos de configuración sin capturas que mostrar): llevan un
-fondo con degradado e icono SVG en línea en `index.html` en su lugar, sin
-depender de ningún archivo de imagen.
-
 La tarjeta de Pequeños Viajeros enlaza además a
 `docs/guia-estilos-pequenos-viajeros.pdf` con un botón "Ver guía (PDF)" que
 abre el documento en una pestaña nueva.

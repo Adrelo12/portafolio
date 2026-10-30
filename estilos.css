@@ -244,7 +244,7 @@ ul {
 ===================================================== */
 .rejilla-proyectos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 28px;
 }
 
@@ -266,26 +266,6 @@ ul {
 .imagen-proyecto {
   height: 170px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  color: var(--blanco);
-}
-
-.icono-imagen-proyecto {
-  width: 42px;
-  height: 42px;
-  stroke: currentColor;
-  fill: none;
-  stroke-width: 1.5;
-}
-
-.nombre-imagen-proyecto {
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
 }
 
 .imagen-pequenos-viajeros {
@@ -294,9 +274,6 @@ ul {
   background-size: cover;
   background-position: center;
 }
-.imagen-spring-angular { background: linear-gradient(135deg, #22c55e, #0ea5e9); }
-.imagen-ubuntu-server { background: linear-gradient(135deg, #475569, #0f172a); }
-
 .boton-tarjeta {
   align-self: flex-start;
   margin-top: 14px;
@@ -649,10 +626,6 @@ body.bloquear-scroll {
    RESPONSIVE: TABLET
 ===================================================== */
 @media (max-width: 1024px) {
-  .rejilla-proyectos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .rejilla-tecnologias {
     grid-template-columns: repeat(2, 1fr);
   }
